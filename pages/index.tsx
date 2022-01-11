@@ -4,7 +4,7 @@ import Link from "next/link"
 const Home: NextPage = () => {
   return (
     <div>
-      <Link href="/samples/useeffect">
+      <Link href="/hooks/useeffect">
         <a>useEffect</a>
       </Link>
     </div>
