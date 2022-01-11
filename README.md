@@ -1,5 +1,10 @@
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
+## これは何
+
+React 練習用のリポジトリ。
+都度実装を追加して React に関する練習をする。
+
 ## Getting Started
 
 First, run the development server:
