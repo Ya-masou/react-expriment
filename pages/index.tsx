@@ -1,13 +1,14 @@
 import type { NextPage } from 'next'
 import Link from "next/link"
+import { HStack, Button } from "@chakra-ui/react"
 
 const Home: NextPage = () => {
   return (
-    <div>
+    <HStack spacing={2}>
       <Link href="/hooks/useeffect">
-        <a>useEffect</a>
+        <Button as="a" colorScheme="teal" variant="outline">useEffect</Button>
       </Link>
-    </div>
+    </HStack>
   )
 }
 
