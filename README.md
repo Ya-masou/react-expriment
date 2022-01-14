@@ -2,8 +2,8 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 ## これは何
 
-React 練習用のリポジトリ。
-都度実装を追加して React に関する練習をする。
+React の実験場リポジトリ。
+都度実装を追加して React に関するあれこれを実験し検証する。
 
 ## Getting Started
 
