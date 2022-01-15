@@ -6,7 +6,6 @@ import {
   Divider,
   Button,
   HStack,
-  Code
 } from "@chakra-ui/react"
 import { Card } from "@/components/parts/Card"
 
