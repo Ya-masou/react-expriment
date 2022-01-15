@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import {
   Box,
   Stack,
@@ -8,6 +9,7 @@ import {
   useDisclosure
 } from "@chakra-ui/react";
 import { HamburgerIcon } from "@chakra-ui/icons";
+import { pagesPath } from "@/lib/$path"
 
 // Note: This code could be better,
 // so I'd recommend you to understand how I solved and you could write yours better :)
@@ -31,7 +33,9 @@ export function Header () {
     >
      <Flex align="center" mr={5}>
         <Heading as="h1" size="lg" letterSpacing={"tighter"}>
-          React 検証用サイト
+          <Link href={pagesPath.$url()}>
+            React 実験場
+          </Link>
         </Heading>
       </Flex>
 
