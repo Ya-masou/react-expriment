@@ -11,12 +11,6 @@ import {
 import { HamburgerIcon } from "@chakra-ui/icons";
 import { pagesPath } from "@/lib/$path"
 
-// Note: This code could be better,
-// so I'd recommend you to understand how I solved and you could write yours better :)
-// Good luck! 🍀
-
-// Update: Check these awesome headers from Choc UI 👇
-// https://choc-ui.tech/docs/elements/headers
 export function Header () {
   const { isOpen, onOpen, onClose } = useDisclosure();
   const handleToggle = () => (isOpen ? onClose() : onOpen());
