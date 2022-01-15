@@ -9,8 +9,6 @@ import {
 } from "@chakra-ui/react"
 import { Card } from "@/components/parts/Card"
 
-
-
 export const UsestatePage = () => {
   const [count, setCount] = useState(0)
 
