@@ -1,3 +1,3 @@
-export default function useeffect() {
-  return <div>useEffect の練習</div>
-}
+import { UseeffectPage } from "@/components/pages/UseeffectPage"
+
+export default UseeffectPage
