@@ -2,8 +2,9 @@ module.exports = {
   root: true,
   parser: "@typescript-eslint/parser",
   plugins: ["@typescript-eslint"],
-  "extends": [
+  extends: [
     "next/core-web-vitals",
-    "plugin:@typescript-eslint/recommended"
-  ]
-}
+    "plugin:@typescript-eslint/recommended",
+    "prettier",
+  ],
+};
