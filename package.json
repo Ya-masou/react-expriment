@@ -7,7 +7,7 @@
     "dev:path": "pathpida --ignorePath .gitignore --watch",
     "build": "pathpida --ignorePath .gitignore && next build",
     "start": "next start",
-    "lint": "eslint . --ext .ts,.tsx"
+    "lint": "eslint './**/*.{js,ts,tsx}' --ignore-path .gitignore"
   },
   "dependencies": {
     "@chakra-ui/icons": "^1.1.1",

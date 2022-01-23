@@ -1,3 +1,3 @@
-import { UsestatePage } from "@/components/pages/UsestatePage"
+import { UsestatePage } from "@/src/components/pages/UsestatePage"
 
 export default UsestatePage

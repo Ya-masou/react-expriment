@@ -63,5 +63,5 @@ export function Header () {
       </Box>
     </Flex>
   );
-};
+}
 

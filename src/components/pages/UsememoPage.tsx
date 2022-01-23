@@ -9,7 +9,7 @@ import {
   HStack,
   VStack
 } from "@chakra-ui/react"
-import { Card } from "@/components/parts/Card"
+import { Card } from "@/src/components/parts/Card"
 
 type ChildProps = {
   count: number;

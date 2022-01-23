@@ -1,6 +1,5 @@
 import { useState, useEffect } from "react"
 import {
-  Flex,
   Box,
   Text,
   Divider,
@@ -8,7 +7,7 @@ import {
   HStack,
   VStack
 } from "@chakra-ui/react"
-import { Card } from "@/components/parts/Card"
+import { Card } from "@/src/components/parts/Card"
 
 const Timer = () => {
   const [time, setTime] = useState(0)
@@ -18,7 +17,7 @@ const Timer = () => {
       setTime((prevTime) => prevTime + 1)
     }, 1000)
 
-    // return () => clearInterval(interval)
+    return () => clearInterval(interval)
   }, [])
 
   return <Text fontSize="2xl">Time: {time}s</Text>

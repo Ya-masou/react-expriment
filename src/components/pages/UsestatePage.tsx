@@ -7,7 +7,7 @@ import {
   Button,
   HStack,
 } from "@chakra-ui/react"
-import { Card } from "@/components/parts/Card"
+import { Card } from "@/src/components/parts/Card"
 
 export const UsestatePage = () => {
   const [count, setCount] = useState(0)

@@ -15,6 +15,9 @@ const Home: NextPage = () => {
       <Link href={pagesPath.hooks.usememo.$url()} passHref>
         <Button as="a" colorScheme="teal" variant="outline">useMemo</Button>
       </Link>
+      <Link href={pagesPath.hooks.customhooks.$url()} passHref>
+        <Button as="a" colorScheme="teal" variant="outline">custom hooks</Button>
+      </Link>
     </HStack>
   )
 }
