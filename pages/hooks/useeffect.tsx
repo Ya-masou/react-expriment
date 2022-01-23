@@ -1,3 +1,3 @@
-import { UseeffectPage } from "@/src/components/pages/UseeffectPage"
+import { UseeffectPage } from "@/src/components/pages/UseeffectPage";
 
-export default UseeffectPage
+export default UseeffectPage;

@@ -1,3 +1,3 @@
-import { CustomHooksPage } from "@/src/components/pages/CustomHooksPage"
+import { CustomHooksPage } from "@/src/components/pages/CustomHooksPage";
 
-export default CustomHooksPage
+export default CustomHooksPage;

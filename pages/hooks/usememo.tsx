@@ -1,3 +1,3 @@
-import { UsememoPage } from "@/src/components/pages/UsememoPage"
+import { UsememoPage } from "@/src/components/pages/UsememoPage";
 
-export default UsememoPage
+export default UsememoPage;

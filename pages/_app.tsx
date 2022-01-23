@@ -1,7 +1,7 @@
-import type { AppProps } from 'next/app'
-import { ChakraProvider } from '@chakra-ui/react'
-import { Box } from "@chakra-ui/react"
-import { Header } from "@/src/components/features/Header"
+import type { AppProps } from "next/app";
+import { ChakraProvider } from "@chakra-ui/react";
+import { Box } from "@chakra-ui/react";
+import { Header } from "@/src/components/features/Header";
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
@@ -11,7 +11,7 @@ function MyApp({ Component, pageProps }: AppProps) {
         <Component {...pageProps} />
       </Box>
     </ChakraProvider>
-  )
+  );
 }
 
-export default MyApp
+export default MyApp;

@@ -1,36 +1,29 @@
-import { useState, useEffect } from "react"
-import {
-  Box,
-  Text,
-  Divider,
-  Button,
-  HStack,
-  VStack
-} from "@chakra-ui/react"
-import { Card } from "@/src/components/parts/Card"
+import { useState, useEffect } from "react";
+import { Box, Text, Divider, Button, HStack, VStack } from "@chakra-ui/react";
+import { Card } from "@/src/components/parts/Card";
 
 const Timer = () => {
-  const [time, setTime] = useState(0)
+  const [time, setTime] = useState(0);
 
   useEffect(() => {
     const interval = setInterval(() => {
-      setTime((prevTime) => prevTime + 1)
-    }, 1000)
+      setTime((prevTime) => prevTime + 1);
+    }, 1000);
 
-    return () => clearInterval(interval)
-  }, [])
+    return () => clearInterval(interval);
+  }, []);
 
-  return <Text fontSize="2xl">Time: {time}s</Text>
-}
+  return <Text fontSize="2xl">Time: {time}s</Text>;
+};
 
 export const UseeffectPage = () => {
-  const [count, setCount] = useState(0)
-  const [text, setText] = useState("")
-  const [showTimer, toggleShowTimer] = useState(true)
+  const [count, setCount] = useState(0);
+  const [text, setText] = useState("");
+  const [showTimer, toggleShowTimer] = useState(true);
 
   useEffect(() => {
-    setText(`useEffect hash worked ${count} times.`)
-  }, [count])
+    setText(`useEffect hash worked ${count} times.`);
+  }, [count]);
 
   return (
     <VStack spacing={4}>
@@ -42,19 +35,29 @@ export const UseeffectPage = () => {
         <Divider />
         <Box paddingY={3}>
           <HStack>
-            <Button colorScheme='teal' variant='solid' onClick={() => setCount(count + 1)}>Increment</Button>
+            <Button
+              colorScheme="teal"
+              variant="solid"
+              onClick={() => setCount(count + 1)}
+            >
+              Increment
+            </Button>
           </HStack>
         </Box>
       </Card>
       <Card title="クリーンアップ関数を使ってみる">
-        <Box paddingY={3}>
-          {showTimer && <Timer />}
-        </Box>
+        <Box paddingY={3}>{showTimer && <Timer />}</Box>
         <Divider />
         <Box paddingY={3}>
-          <Button colorScheme='teal' variant='solid' onClick={() => toggleShowTimer(showTimer != true)}>Toggle</Button>
+          <Button
+            colorScheme="teal"
+            variant="solid"
+            onClick={() => toggleShowTimer(showTimer != true)}
+          >
+            Toggle
+          </Button>
         </Box>
       </Card>
     </VStack>
-  )
-}
+  );
+};

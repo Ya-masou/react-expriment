@@ -1,4 +1,4 @@
-import Link from 'next/link'
+import Link from "next/link";
 import {
   Box,
   Stack,
@@ -6,12 +6,12 @@ import {
   Flex,
   Text,
   Button,
-  useDisclosure
+  useDisclosure,
 } from "@chakra-ui/react";
 import { HamburgerIcon } from "@chakra-ui/icons";
-import { pagesPath } from "@/lib/$path"
+import { pagesPath } from "@/lib/$path";
 
-export function Header () {
+export function Header() {
   const { isOpen, onOpen, onClose } = useDisclosure();
   const handleToggle = () => (isOpen ? onClose() : onOpen());
 
@@ -25,11 +25,9 @@ export function Header () {
       bg="teal.500"
       color="white"
     >
-     <Flex align="center" mr={5}>
+      <Flex align="center" mr={5}>
         <Heading as="h1" size="lg" letterSpacing={"tighter"}>
-          <Link href={pagesPath.$url()}>
-            React 実験場
-          </Link>
+          <Link href={pagesPath.$url()}>React 実験場</Link>
         </Heading>
       </Flex>
 
@@ -64,4 +62,3 @@ export function Header () {
     </Flex>
   );
 }
-
