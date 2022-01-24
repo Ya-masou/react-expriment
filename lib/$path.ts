@@ -5,6 +5,9 @@ export const pagesPath = {
     customhooks: {
       $url: (url?: { hash?: string }) => ({ pathname: '/hooks/customhooks' as const, hash: url?.hash })
     },
+    usecontext: {
+      $url: (url?: { hash?: string }) => ({ pathname: '/hooks/usecontext' as const, hash: url?.hash })
+    },
     useeffect: {
       $url: (url?: { hash?: string }) => ({ pathname: '/hooks/useeffect' as const, hash: url?.hash })
     },

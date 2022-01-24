@@ -2,7 +2,7 @@
 // * https://qiita.com/soarflat/items/b9d3d17b8ab1f5dbfed2
 import { useState, useEffect, VFC, memo, useCallback, useMemo } from "react";
 import { Box, Text, Divider, Button, HStack, VStack } from "@chakra-ui/react";
-import { Card } from "@/src/components/parts/Card";
+import { Card } from "@/components/parts/Card";
 
 type ChildProps = {
   count: number;

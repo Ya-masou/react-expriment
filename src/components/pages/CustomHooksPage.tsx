@@ -3,7 +3,7 @@
 
 import { useState } from "react";
 import { Box, Text, Divider, Button, HStack, VStack } from "@chakra-ui/react";
-import { Card } from "@/src/components/parts/Card";
+import { Card } from "@/components/parts/Card";
 
 const useCounter = (): [number, () => void] => {
   const [count, setCount] = useState(0);

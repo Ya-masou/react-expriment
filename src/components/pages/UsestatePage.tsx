@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Flex, Box, Text, Divider, Button, HStack } from "@chakra-ui/react";
-import { Card } from "@/src/components/parts/Card";
+import { Card } from "@/components/parts/Card";
 
 export const UsestatePage = () => {
   const [count, setCount] = useState(0);
