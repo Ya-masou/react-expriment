@@ -4,7 +4,7 @@
   "scripts": {
     "dev": "run-p dev:*",
     "dev:next": "next dev",
-    "dev:path": "pathpida --ignorePath .gitignore --watch",
+    "dev:path": "pathpida --ignorePath .gitignore --watch -o './src/lib'",
     "build": "pathpida --ignorePath .gitignore && next build",
     "start": "next start",
     "lint": "eslint './**/*.{js,ts,tsx}' --ignore-path .gitignore",
