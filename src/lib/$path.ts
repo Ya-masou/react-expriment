@@ -1,6 +1,11 @@
 /* eslint-disable */
 // prettier-ignore
 export const pagesPath = {
+  github: {
+    profile: {
+      $url: (url?: { hash?: string }) => ({ pathname: '/github/profile' as const, hash: url?.hash })
+    }
+  },
   hooks: {
     customhooks: {
       $url: (url?: { hash?: string }) => ({ pathname: '/hooks/customhooks' as const, hash: url?.hash })
@@ -16,11 +21,6 @@ export const pagesPath = {
     },
     usestate: {
       $url: (url?: { hash?: string }) => ({ pathname: '/hooks/usestate' as const, hash: url?.hash })
-    }
-  },
-  uis: {
-    tables: {
-      $url: (url?: { hash?: string }) => ({ pathname: '/uis/tables' as const, hash: url?.hash })
     }
   },
   $url: (url?: { hash?: string }) => ({ pathname: '/' as const, hash: url?.hash })

@@ -1,11 +1,11 @@
 import type { NextPage } from "next";
 import Link from "next/link";
-import { HStack, Button, Heading, Box } from "@chakra-ui/react";
+import { Stack, HStack, Button, Heading, Box } from "@chakra-ui/react";
 import { pagesPath } from "@/lib/$path";
 
 const Home: NextPage = () => {
   return (
-    <>
+    <Stack spacing={6}>
       <Box>
         <Heading as="h2" mb={4}>
           Hooks
@@ -34,16 +34,16 @@ const Home: NextPage = () => {
         </HStack>
       </Box>
       <Box>
-        <Heading as="h2" mb={4}>UI</Heading>
+        <Heading as="h2" mb={4}>Github</Heading>
         <HStack>
-          <Link href={pagesPath.uis.tables.$url()} passHref>
+          <Link href={pagesPath.github.profile.$url()} passHref>
             <Button as="a" colorScheme="teal" variant="outline">
-              tables
+              profile
             </Button>
           </Link>
         </HStack>
       </Box>
-    </>
+    </Stack>
   );
 };
 
