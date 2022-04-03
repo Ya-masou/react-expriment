@@ -9,7 +9,7 @@
     "start": "next start",
     "lint": "eslint './**/*.{js,ts,tsx}' --ignore-path .gitignore",
     "lint:fix": "yarn lint --fix",
-    "format": "yarn prettier --write './**/*.{js,ts,tsx}'",
+    "format": "yarn prettier --write './src/**/*.{js,ts,tsx}'",
     "codegen": "graphql-codegen --config codegen.yml"
   },
   "dependencies": {
