@@ -34,7 +34,9 @@ const Home: NextPage = () => {
         </HStack>
       </Box>
       <Box>
-        <Heading as="h2" mb={4}>Github</Heading>
+        <Heading as="h2" mb={4}>
+          Github
+        </Heading>
         <HStack>
           <Link href={pagesPath.github.profile.$url()} passHref>
             <Button as="a" colorScheme="teal" variant="outline">

@@ -1,3 +1,3 @@
 export const UsecontextPage = () => {
-  return <div />
-}
+  return <div />;
+};

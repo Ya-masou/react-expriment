@@ -21,7 +21,9 @@ export const Card: VFC<PropsWithChildren<Props>> = ({
       padding={4}
     >
       <>
-        <Heading as="h3">{title}</Heading>
+        <Heading as="h3" paddingBottom={5}>
+          {title}
+        </Heading>
         <Text>{description}</Text>
         {children}
       </>

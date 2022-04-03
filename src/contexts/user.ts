@@ -1,8 +1,8 @@
-import { createContext } from "react"
+import { createContext } from "react";
 
 const user = {
   name: "hoge",
-  email: "hoge@example.com"
-}
+  email: "hoge@example.com",
+};
 
-export const UserContext = createContext(user)
+export const UserContext = createContext(user);

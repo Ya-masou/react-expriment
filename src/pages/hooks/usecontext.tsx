@@ -1,3 +1,3 @@
-import { UsecontextPage } from "@/components/pages/UsecontextPage"
+import { UsecontextPage } from "@/components/pages/UsecontextPage";
 
-export default UsecontextPage
+export default UsecontextPage;
